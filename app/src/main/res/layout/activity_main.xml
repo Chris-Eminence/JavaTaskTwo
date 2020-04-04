@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#D20E102E"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/firstDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/flag"/>
+
+    <ImageView
+        android:id="@+id/myPicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/flag"
+        android:paddingHorizontal="15dp"
+        android:src="@drawable/myown"/>
+
+
+    <ImageView
+        android:id="@+id/random1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/flag"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/imagethree"/>
+
+
+    <ImageView
+        android:id="@+id/random2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/myPicture"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/random1"
+        android:src="@drawable/imagetwo"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/detials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstDivision"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/slack_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/email" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/detials"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#fff">
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heading"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="15dp"
+            android:text="@string/likes"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/likesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/likes"
+            android:text="@string/likesList"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/dislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/likesList"
+            android:layout_marginTop="15dp"
+            android:text="@string/dislikes"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+
+        <TextView
+            android:id="@+id/dislikesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dislike"
+            android:text="@string/dislikesList"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/hobbies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dislikesList"
+            android:layout_marginTop="15dp"
+            android:text="@string/hobbies"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/hobbiesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hobbies"
+            android:text="@string/hobbiesList"
+            android:textStyle="bold"/>
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/finalDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollView"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/imagefive"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@drawable/imagefour"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/imageseven"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+

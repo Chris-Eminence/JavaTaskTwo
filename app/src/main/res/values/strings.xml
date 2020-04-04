@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SecondTask</string>
+    <string name="name">Emediong Christopher</string>
+    <string name="slack_id">Chris Eminence</string>
+    <string name="email">emichris380@gmail.com</string>
+    <string name="heading">Likes, Dislikes and Hobbies</string>
+    <string name="likes">Likes</string>
+    <string name="likesList">Eating\nDancing\nListening to musics\nPhotography</string>
+    <string name="dislikes">Dislikes</string>
+    <string name="dislikesList">Fighting\nPride\nNigerian movies\nPolitics</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="hobbiesList">Sleeping\nHanging out with friends\nSurfing the internet\nWriting</string>
+</resources>
